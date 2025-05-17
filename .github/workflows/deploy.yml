@@ -28,5 +28,6 @@ jobs:
             cd /root/CI-CD
             git pull origin main
             npm install --ignore-workspace
+            npm run build 
             pm2 restart test-ci-cd
           EOF
